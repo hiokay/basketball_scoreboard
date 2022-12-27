@@ -1,0 +1,42 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home-container"> <!--Home-->
+                <h3>HOME</h3>
+
+                <div class="home-number-container"> <!--Contains the number score for home-->
+                    <h1 id="home-number">0</h1> <!--Displays the numbber score for home-->
+                </div>
+
+                <div class="home-button-container"> <!--contains 3 buttons, dont forget to flex on horizontal-->
+                    <button id="home-1" onclick="homeIncrement1()">1</button>
+
+                    <button id="home-2" onclick="homeIncrement2()">2</button>
+
+                    <button id="home-3" onclick="homeIncrement3()">3</button>
+                </div>
+            </div>
+            
+            <div class="guest-number-container"> <!--Guest-->
+                <h3>GUEST</h3>
+
+                <div class="guest-number-container"> <!--Contains the number score for guest-->
+                    <h1 id="guest-number" >0</h1> <!--Displays the number score for guest-->
+                </div>
+
+                <div class="guest-number-container"> <!--contains 3 button, dont forget to put flex on horizontal-->
+                    <button id="guest-1" onclick="guestIncrement1()">1</button>
+
+                    <button id="guest-2" onclick="guestIncrement2()">2</button>
+                    
+                    <button id="guest-3" onclick="guestIncrement3()">3</button>
+                </div> 
+            </div>
+        </div>
+        <script src="increment.js"></script>
+    </body>
+</html>
